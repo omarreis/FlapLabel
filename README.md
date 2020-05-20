@@ -61,6 +61,7 @@ Other charsets:
 Text should flap until final state is reached. 
 
 To change FlapLabel text at run time, just change FlapLabel1.Caption
+Note that you can only use characters that are in your charset
 
 ## Example
 Compile and run TesFlapLabel.dpr ( see screen shot )

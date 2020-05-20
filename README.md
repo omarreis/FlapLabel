@@ -42,14 +42,16 @@ symbols or icons to your charset (see below)
 
 * Set FlapCharSet properties
   * AirportCharset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.! :'  - These are the chars in the bitmap, for look up
-  * CharsetBMP = a PNG image of the charset used by the display ( in this case a 240x250 image, shown below)
+  * CharsetBMP = Load a PNG image with charset art (in this case a 240x250 image, shown below)
  
 ![Letters and numbers charset](/Images/LettersNumbersCharset.png)
-  
-  * RowCount = 5
+  Set charset layout
+  * RowCount = 5              
   * ColCount = 8
+  Set frame size in pixels
   * FrameWidth = 30
   * FrameHeight = 50
+  Number of frames
   * FrameCount = 40
  
 Other charsets:

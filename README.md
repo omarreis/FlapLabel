@@ -19,7 +19,16 @@ The original components were for VCL. This is port if for FMX
 
 ## Usage
 
-* Add a TFlapCharSet to your form ( ex: FlapCharSet1 ) - Charset contains an image with the character set to be used by FlapLabels. Plates are not rendered as text. They are extracted from the charset image
+To use FlapLabels you need two components on your form: TFlapCharset and TFlapLabels.
+The TFlapCharset contain the art to be used by FlapLabels. 
+Depending on the application, you may use more than one charset: one with letters and one with just numbers.
+
+Each FlapLabel uses one charset. One charset can be used by 
+multiple FlapLabels. 
+
+* Add a TFlapCharSet to your form ( ex: FlapCharSet1 ) - Charset contains an image with the character set to be used by FlapLabels. Plates are not rendered as text. They are extracted from the charset image, so you can add
+symbols or icons to your charset (see below)
+
 * Set FlapCharSet properties
   * AirportCharset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.! :'  - These are the chars in the bitmap, for look up
   * CharsetBMP = a PNG image of the charset used by the display ( in this case a 240x250 image, shown below)

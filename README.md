@@ -10,7 +10,7 @@ It is still in use in that airport.
 
 The original components where for VCL. This is a port to FMX.
 
-![FlapLabel screen shot][../Images/FlapLabelTestShot.png]
+![FlapLabel screen shot][https://github.com/omarreis/FlapLabel/blob/master/Images/FlapLabelTestShot.png]
 
 ## Installation
 
@@ -33,5 +33,5 @@ The original components where for VCL. This is a port to FMX.
   * FrameCount = 40
 
 
-![sample charset][Images/ArrowsCharset.png]
-![Numbers charset][Images/NumbersCharset.png]
+![sample charset][https://github.com/omarreis/FlapLabel/blob/master/Images/ArrowsCharset.png]
+![Numbers charset][https://github.com/omarreis/FlapLabel/blob/master/Images/NumbersCharset.png]

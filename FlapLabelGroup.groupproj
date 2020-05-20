@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{133C900D-1097-44D8-93AF-D87B0A472563}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TestFlapLabel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FlapLabelPkg.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TestFlapLabel">
+        <MSBuild Projects="TestFlapLabel.dproj"/>
+    </Target>
+    <Target Name="TestFlapLabel:Clean">
+        <MSBuild Projects="TestFlapLabel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestFlapLabel:Make">
+        <MSBuild Projects="TestFlapLabel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FlapLabelPkg">
+        <MSBuild Projects="FlapLabelPkg.dproj"/>
+    </Target>
+    <Target Name="FlapLabelPkg:Clean">
+        <MSBuild Projects="FlapLabelPkg.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlapLabelPkg:Make">
+        <MSBuild Projects="FlapLabelPkg.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TestFlapLabel;FlapLabelPkg"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TestFlapLabel:Clean;FlapLabelPkg:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TestFlapLabel:Make;FlapLabelPkg:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

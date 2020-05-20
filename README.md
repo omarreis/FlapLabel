@@ -9,10 +9,8 @@ in substitution to old mechanical displays from Solari.
 It is still in use in that airport.
 
 The original components where for VCL. This is a port to FMX
-[FlapLabel screen shot][https://github.com/omarreis/FlapLabel/blob/master/Images/FlapLabelTestShot.png?raw=true]
 
-[[Images/FlapLabelTestShot.png]]
-
+[[Images/FlapLabelTestShot.png|ALT TEXT]]
 
 ## Installation
 

@@ -64,6 +64,7 @@ Other charsets:
  
 * Add a TFlapLabel component to the Form (ex: FlapLabel1) 
 * Set FlapLabel1.CharSet property to FlapCharSet1
+* Set FlapLabel1.CountFlaps  number of digits in the label
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
 Text should flap until final state is reached. 

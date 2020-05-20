@@ -1,14 +1,18 @@
 # FlapLabel
-Airport style display board components for Delphi Firemonkey. 
+Airport style display components for Delphi Firemonkey. 
 Simulates old mechanical flight information displays
 (the ones with rolls of plates that change in sequence) 
 
-FlapLabel was developed in 2002 for actual flight screens for 
-São Paulo Airport (Congonhas) displays, 
-in substitution to expensive mechanical displays from Solari.
+FlapLabel was originaly developed in 2002 for actual 
+flight screens for São Paulo Airport (Congonhas). 
+We installed the software plasma displays, 
+which were expensive at the time, in substitution 
+to even more expensive mechanical displays from Solari.
 It is still in use in that airport.
+The original components were for VCL. 
 
-The original components were for VCL. This is port if for FMX
+This is port is for Firemonkey and is tested
+on Windows, iOS and Android.
 
 ![screenshot](/Images/FlapLabelTestShot.png)
 

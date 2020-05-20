@@ -10,7 +10,7 @@ It is still in use in that airport.
 
 The original components where for VCL. This is a port to FMX.
 
-![FlapLabel screen shot][Images/FlapLabelTestShot.png]
+![FlapLabel screen shot][/Images/FlapLabelTestShot.png]
 
 ## Installation
 

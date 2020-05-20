@@ -26,6 +26,10 @@ Depending on the application, you may use more than one charset: one with letter
 Each FlapLabel uses one charset. One charset can be used by 
 multiple FlapLabels. 
 
+The default behaviour for a FlapLabel characters is to change
+in sequence until the target character is reached.
+But you can set the display to Go Direct, without showing all characters ( see example)
+
 * Add a TFlapCharSet to your form ( ex: FlapCharSet1 ) - Charset contains an image with the character set to be used by FlapLabels. Plates are not rendered as text. They are extracted from the charset image, so you can add
 symbols or icons to your charset (see below)
 
@@ -52,7 +56,10 @@ Other charsets:
 
 Text should flap until final state is reached. 
 
-To change FlapLabel text at run time, just change the FlapLabel1.Caption
+To change FlapLabel text at run time, just change FlapLabel1.Caption
+
+## Example
+Compile and run TesFlapLabel.dpr ( see screen shot )
 
 Have fun..
 

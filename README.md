@@ -45,13 +45,13 @@ symbols or icons to your charset (see below)
   * CharsetBMP = Load a PNG image with charset art (in this case a 240x250 image, shown below)
  
 ![Letters and numbers charset](/Images/LettersNumbersCharset.png)
-  Set charset layout
+Set charset layout
   * RowCount = 5              
   * ColCount = 8
-  Set frame size in pixels
+Set frame size in pixels
   * FrameWidth = 30
   * FrameHeight = 50
-  Number of frames
+Number of frames
   * FrameCount = 40
  
 Other charsets:

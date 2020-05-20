@@ -75,5 +75,9 @@ Note that you can only use characters that are in your charset
 ## Example
 Compile and run TesFlapLabel.dpr ( see screen shot )
 
+Check this *tik tok video*
+
+https://www.tiktok.com/@omar_reis/video/6802287150411877638
+
 Have fun..
 

@@ -10,7 +10,7 @@ It is still in use in that airport.
 
 The original components where for VCL. This is a port to FMX.
 
-![FlapLabel screen shot][https://github.com/omarreis/FlapLabel/blob/master/Images/FlapLabelTestShot.png]
+![FlapLabel screen shot][https://raw.githubusercontent.com/omarreis/FlapLabel/master/Images/FlapLabelTestShot.png]
 
 ## Installation
 
@@ -19,7 +19,7 @@ The original components where for VCL. This is a port to FMX.
 
 ## Usage
 
-* Add a TFlapCharSet to your form. 
+* Add a TFlapCharSet to your form ( ex: FlapCharSet1 ) 
 * Set FlapCharSet properties
   * AirportCharset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.! :'
   * CharsetBMP = a png image of the charset used by the display ( in this case a 240x250 image, shown below)
@@ -31,6 +31,9 @@ The original components where for VCL. This is a port to FMX.
   * FrameWidth = 30
   * FrameHeight = 50
   * FrameCount = 40
+* Add a TFlapLabel component to the Form (ex: FlapLabel1) 
+* Set FlapLabel1.CharSet property to FlapCharSet1
+* Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
 
 ![sample charset][https://github.com/omarreis/FlapLabel/blob/master/Images/ArrowsCharset.png]

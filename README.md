@@ -8,9 +8,11 @@ São Paulo Airport (Congonhas)  flight information displays,
 in substitution to old mechanical displays from Solari.
 It is still in use in that airport.
 
-The original components where for VCL. This is a port to FMX.
+The original components where for VCL. This is a port to FMX
+[FlapLabel screen shot][https://github.com/omarreis/FlapLabel/blob/master/Images/FlapLabelTestShot.png?raw=true]
 
-![FlapLabel screen shot][https://github.com/omarreis/FlapLabel/blob/master/Images/FlapLabelTestShot.png?raw=true]
+![alt text][../Images/FlapLabelTestShot.png]
+
 
 ## Installation
 

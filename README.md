@@ -24,7 +24,7 @@ The original components where for VCL. This is a port to FMX
   * AirportCharset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.! :'
   * CharsetBMP = a png image of the charset used by the display ( in this case a 240x250 image, shown below)
  
-![Letters and numbers charset][Images/LettersNumbersCharset.png]
+![Letters and numbers charset](/Images/LettersNumbersCharset.png)
   
   * RowCount = 5
   * ColCount = 8
@@ -36,5 +36,5 @@ The original components where for VCL. This is a port to FMX
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
 
-![sample charset][https://github.com/omarreis/FlapLabel/blob/master/Images/ArrowsCharset.png]
-![Numbers charset][https://github.com/omarreis/FlapLabel/blob/master/Images/NumbersCharset.png]
+![sample charset](/Images/ArrowsCharset.png)
+![Numbers charset](/Images/NumbersCharset.png)

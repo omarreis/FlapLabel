@@ -44,13 +44,16 @@ symbols or icons to your charset (see below)
   * AirportCharset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.! :'  - These are the chars in the bitmap, for look up
   * CharsetBMP = Load a PNG image with charset art (in this case a 240x250 image, shown below)
  
-![Letters and numbers charset](/Images/LettersNumbersCharset.png)
-Set charset layout
+![Letters and numbers charset](/Images/LettersNumbersCharset.png).
+
+Set charset layout.
   * RowCount = 5              
   * ColCount = 8
-Set frame size in pixels
+  
+Set frame size in pixels.
   * FrameWidth = 30
   * FrameHeight = 50
+  
 Number of frames
   * FrameCount = 40
  

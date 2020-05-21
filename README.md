@@ -57,17 +57,19 @@ Set frame size in pixels.
 Number of frames
   * FrameCount = 40
  
-Other charsets:
-
-![sample charset](/Images/ArrowsCharset.png)
-![Numbers charset](/Images/NumbersCharset.png)
  
 * Add a TFlapLabel component to the Form (ex: FlapLabel1) 
 * Set FlapLabel1.CharSet property to FlapCharSet1
 * Set FlapLabel1.CountFlaps  number of digits in the label
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
-Text should flap until final state is reached. 
+Label should flap from current state to 'TEST'. 
+
+Other charsets:
+
+![sample charset](/Images/ArrowsCharset.png).
+![Numbers charset](/Images/NumbersCharset.png).
+
 
 To change FlapLabel text at run time, just change FlapLabel1.Caption
 Note that you can only use characters that are in your charset

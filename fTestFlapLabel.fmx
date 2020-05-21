@@ -3,7 +3,7 @@ object FormTestFlapLabels: TFormTestFlapLabels
   Top = 0
   Caption = 'FlapLabel test app'
   ClientHeight = 699
-  ClientWidth = 434
+  ClientWidth = 334
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -37,10 +37,10 @@ object FormTestFlapLabels: TFormTestFlapLabels
   object rectLabels: TRectangle
     Anchors = [akTop]
     Fill.Color = xFF202020
-    Position.X = 7.000000000000000000
+    Position.X = 2.000000000000000000
     Position.Y = 8.000000000000000000
-    Size.Width = 425.000000000000000000
-    Size.Height = 193.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 177.000000000000000000
     Size.PlatformDefault = False
     XRadius = 10.000000000000000000
     YRadius = 10.000000000000000000
@@ -51,9 +51,9 @@ object FormTestFlapLabels: TFormTestFlapLabels
       HorizGap = 1
       FlapTextAlign = Leading
       Anchors = [akTop]
-      Position.X = 10.000000000000000000
-      Position.Y = 10.000000000000000000
-      Size.Width = 409.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 314.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
     end
@@ -64,9 +64,9 @@ object FormTestFlapLabels: TFormTestFlapLabels
       HorizGap = 1
       FlapTextAlign = Leading
       Anchors = [akTop]
-      Position.X = 9.000000000000000000
-      Position.Y = 74.000000000000000000
-      Size.Width = 409.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 314.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
     end
@@ -77,9 +77,9 @@ object FormTestFlapLabels: TFormTestFlapLabels
       HorizGap = 1
       FlapTextAlign = Leading
       Anchors = [akTop]
-      Position.X = 10.000000000000000000
-      Position.Y = 138.000000000000000000
-      Size.Width = 409.000000000000000000
+      Position.X = 9.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 314.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
     end

@@ -79,7 +79,7 @@ Compile and run TesFlapLabel.dpr ( see screen shot )
 
 Check this *tik tok video*
 
-https://www.tiktok.com/@omar_reis/video/6802287150411877638
+https://www.tiktok.com/@omar_reis/video/6829300494842793222
 
 Have fun..
 

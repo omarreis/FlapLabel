@@ -65,10 +65,11 @@ Number of frames
 
 Label should flap from current state to 'TEST'. 
 
-Other charsets:
+Sample charsets:
 
 ![sample charset](/Images/ArrowsCharset.png).
 ![Numbers charset](/Images/NumbersCharset.png).
+![Airline logos](/Images/Airlines.png).
 
 
 To change FlapLabel text at run time, just change FlapLabel1.Caption

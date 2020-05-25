@@ -13,14 +13,16 @@ uses
 
 type
   TFormTestFlapLabels = class(TForm)
+    FlapCharSet1: TFlapCharSet;
     FlapLabel1: TFlapLabel;
     FlapLabel2: TFlapLabel;
     FlapLabel3: TFlapLabel;
-    FlapCharSet1: TFlapCharSet;
     btnChangeText: TButton;
     cdGoDirect: TSwitch;
     Label1: TLabel;
     rectLabels: TRectangle;
+    FlapCharsetAirlines: TFlapCharSet;
+    FlapLabelAirline: TFlapLabel;
     procedure btnChangeTextClick(Sender: TObject);
     procedure cdGoDirectSwitch(Sender: TObject);
   private
@@ -55,6 +57,9 @@ begin
   FlapLabel1.Caption := Cities[ Random(MAX_CITIES) ];
   FlapLabel2.Caption := Cities[ Random(MAX_CITIES) ];
   FlapLabel3.Caption := Cities[ Random(MAX_CITIES) ];
+
+  FlapLabelAirline.Caption := IntToStr( 1+Random(7) );   // change airline logo by number 1..7
+
 end;
 
 procedure TFormTestFlapLabels.cdGoDirectSwitch(Sender: TObject);

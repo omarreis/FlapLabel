@@ -740,8 +740,8 @@ begin
   fFrameWidth :=0;      //make sure you set all these before using this!!
   fFrameHeight:=0;      //frame size
   fFrameCount :=0;
-  fRowCount   :=0;
-  fColCount   :=0;
+  fRowCount   :=1;
+  fColCount   :=1;
   FCharsetBMP := TBitmap.Create(0, 0); //create empty
   fAirportCharset := '';
 end;
@@ -759,7 +759,8 @@ end;
 
 procedure TFlapCharSet.SetColCount(const Value: integer);
 begin
-  fColCount := Value;
+  if (Value<>0) then
+    fColCount := Value;
 end;
 
 procedure TFlapCharSet.SetCharsetBMP(const Value: TBitmap);
@@ -798,7 +799,7 @@ function TFlapCharSet.getCharPositionInCharset(ix:integer; var LeftPos,TopPos:Si
 var aRow,aCol:integer;
 begin
   Result := false;
-  if (ix>=0) and (ix<fFrameCount) then
+  if (ix>=0) and (ix<fFrameCount) and (fColCount<>0) then
     begin
       aCol := ix mod fColCount; aRow := ix div fColCount;
       LeftPos := aCol*fFrameWidth;    TopPos  := aRow*fFrameHeight;

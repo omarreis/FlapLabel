@@ -1,25 +1,26 @@
 # FlapLabel
 Airport style display components for Delphi Firemonkey. 
-Simulates old mechanical flight information displays
-(the ones with rolls of plates that change in sequence) 
+Simulates old mechanical flight information boards
+(the ones with rolls of plates that change in sequence,
+making a satisfying flap-flap noise) 
 
 FlapLabel was originaly developed in 2002 for actual 
-flight screens for São Paulo Airport (Congonhas). 
+flight information screens for São Paulo Airport (Congonhas). 
 We used plasma displays, expensive at the time, 
 in substitution to even more expensive 
-mechanical boards from Solari.
-It is still in use in that airport.
+mechanical boards from Solari, Italy.
+The sw is still in use in that airport.
 The original components were for VCL. 
 
 This is a port to Firemonkey and is tested
-on Windows, iOS and Android w/ D10.3.3
+on Windows, iOS and Android w/ D10.4.1
 
 ![screenshot](/Images/FlapLabelTestShot.png)
 
 ## Installation
 
-* Compile and install FlapLabelPkg.dpk
-* Components TFlapCharSet, TFlapChar and TFlapLabel will be installed
+* Compile and install FlapLabelPkg.dpk (design time package) 
+* Components TFlapCharSet, TFlapChar and TFlapLabel will be installed 
 
 ## Usage
 
@@ -49,7 +50,7 @@ symbols or icons to your charset (see below)
 Set charset layout.
   * RowCount = 5              
   * ColCount = 8
-  
+
 Set frame size in pixels.
   * FrameWidth = 30
   * FrameHeight = 50
@@ -78,11 +79,11 @@ Note that you can only use characters that are in your charset
 ## Example
 Compile and run TestFlapLabel.dpr ( see screen shot )
 
-## videos
+## tiktok videos
 
 * demo screen: https://www.tiktok.com/@omar_reis/video/6829300494842793222
-
-* worst day in the stock market: https://www.tiktok.com/@omar_reis/video/6802287150411877638
+* worst day on the Stock Market (app NassauSt): https://www.tiktok.com/@omar_reis/video/6802287150411877638
+* AirlinerAttitude w/ FiremonkeySensorFusion and TFlapLabel: https://www.tiktok.com/@omar_reis/video/6846360497550380294  
 
 Have fun..
 

@@ -61,16 +61,18 @@ Number of frames
  
 * Add a TFlapLabel component to the Form (ex: FlapLabel1) 
 * Set FlapLabel1.CharSet property to FlapCharSet1
-* Set FlapLabel1.CountFlaps  number of digits in the label
+* Set FlapLabel1.CountFlaps number of digits in the label. This is the maximun lenght of the display text. 
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
 Label should flap from current state to 'TEST'. 
 
-Sample charsets:
+# Sample charsets
 
-![sample charset](/Images/ArrowsCharset.png).
-![Numbers charset](/Images/NumbersCharset.png).
-![Airline logos](/Images/Airlines.png).
+![sample charset](/Images/ArrowsCharset.png) - tri-state up/down indication.
+
+![Numbers charset](/Images/NumbersCharset.png) - number only fields.
+
+![Airline logos](/Images/Airlines.png) - Airline logos. 
 
 
 To change FlapLabel text at run time, just change FlapLabel1.Caption

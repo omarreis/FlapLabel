@@ -89,6 +89,8 @@ Compile and run TestFlapLabel.dpr ( see screen shot )
 
 ## São Paulo GRU airport display
 
+The photo below ( from 2005 ) shows an array of 9 plasma displays (42") with flight information.
+
 ![São Paulo airport display](painelIndoor.jpeg)
 
 

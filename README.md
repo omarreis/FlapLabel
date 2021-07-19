@@ -12,8 +12,6 @@ mechanical boards from Solari, Italy.
 The sw is still in use in that airport.
 The original components were for VCL. 
 
-![São Paulo airport display](painelIndoor.jpeg)
-
 This is a port to Firemonkey and is tested
 on Windows, iOS and Android w/ D10.4.1
 
@@ -88,6 +86,12 @@ Compile and run TestFlapLabel.dpr ( see screen shot )
 * demo screen: https://www.tiktok.com/@omar_reis/video/6829300494842793222
 * worst day on the Stock Market (app NassauSt): https://www.tiktok.com/@omar_reis/video/6802287150411877638
 * AirlinerAttitude w/ FiremonkeySensorFusion and TFlapLabel: https://www.tiktok.com/@omar_reis/video/6846360497550380294  
+
+## São Paulo GRU airport display
+
+![São Paulo airport display](painelIndoor.jpeg)
+
+
 
 Have fun..
 

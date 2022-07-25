@@ -63,7 +63,7 @@ Number of frames
 * Set FlapLabel1.CountFlaps number of digits in the label. This is the maximun lenght of the display text. 
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
-abel should animate the transitiomn from current state to 'TEST' text.
+The label should animate with ransitions from current state to target 'TEST' text.
 
 # Sample charsets
 

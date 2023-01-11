@@ -28,13 +28,16 @@ To use FlapLabels you need at least two components on your form: TFlapCharset an
 *TFlapCharset* contains the art to be used in FlapLabel plates. 
 Depending on the application, you may use more than one charset: one with letters and one with just numbers.
 Remember that all characters cycle until the desired is reached, so using long charsets is not recommended. 
+In mechanical displays, the charset is a roll of plates connected by loops and an axis.
 
-The charset BMP can be in any grid disposition ( columns and lines ) of equal dimensions ( plate dimensions )
+The charset BMP can be in any grid disposition ( columns and lines ). Plates must have equal size.
 
-Each *FlapLabel* uses one charset. One charset can be used by multiple FlapLabels. 
+Each *TFlapLabel* uses one charset (roll). But a charset can be used by multiple FlapLabels. 
 
 The default behaviour for FlapLabel characters is to transition in sequence until the target character is reached.
-But you can set it to "Go Direct" (cheat) changing to target state in a single transition  (see sample app).
+Each transition has 4 states. 
+
+You can set TFlapLabel to "Go Direct" (cheat), changing to target state in a single transition  (see sample app).
 
 * Add a *TFlapCharSet* to your form ( ex: FlapCharSet1 ) - Charset contains an image with the character set to be used by FlapLabels. 
 

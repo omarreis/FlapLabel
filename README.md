@@ -6,6 +6,7 @@ making a satisfying flap-flap noise ).
 
 ![screenshot](/painelSolari.png)
 
+
 FlapLabel was originaly developed in 2002 for actual 
 flight information screens for São Paulo Airport (Congonhas). 
 

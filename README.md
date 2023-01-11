@@ -7,11 +7,11 @@ making a satisfying flap-flap noise ).
 FlapLabel was originaly developed in 2002 for actual 
 flight information screens for São Paulo Airport (Congonhas). 
 
-We used plasma displays, expensive at the time, 
+We used an array of 42" plasma displays, expensive at the time, 
 in substitution to even more expensive mechanical boards from Solari.
 The sw is still in use in that airport. The original components were for VCL. 
 
-This is a port to Firemonkey and is tested
+This is a port to Delphi Firemonkey and is tested
 on Windows, iOS and Android w/ D10.4.1
 
 ![screenshot](/Images/FlapLabelTestShot.png)
@@ -19,25 +19,25 @@ on Windows, iOS and Android w/ D10.4.1
 ## Installation
 
 * Compile and install FlapLabelPkg.dpk (design time package) 
-* Components TFlapCharSet, TFlapChar and TFlapLabel will be installed 
+* Components *TFlapCharSet*, *TFlapChar* and *TFlapLabel* will be installed 
 
 ## Usage
 
 To use FlapLabels you need at least two components on your form: TFlapCharset and TFlapLabel.
 
-The *TFlapCharset* contains the art to be used in FlapLabel plates. 
+*TFlapCharset* contains the art to be used in FlapLabel plates. 
 Depending on the application, you may use more than one charset: one with letters and one with just numbers.
-Remember that all characters cycle until the desired is reached, 
-so using long charsets is not recommended. 
+Remember that all characters cycle until the desired is reached, so using long charsets is not recommended. 
 
-Each *FlapLabel* uses one charset. One charset can be used by 
-multiple FlapLabels. 
+The charset BMP can be in any grid disposition ( columns and lines ) of equal dimensions ( plate dimensions )
 
-The default behaviour for FlapLabel characters is to change
-in sequence until the target character is reached.
+Each *FlapLabel* uses one charset. One charset can be used by multiple FlapLabels. 
+
+The default behaviour for FlapLabel characters is to transition in sequence until the target character is reached.
 But you can set it to "Go Direct" (cheat) changing to target state in a single transition  (see sample app).
 
 * Add a *TFlapCharSet* to your form ( ex: FlapCharSet1 ) - Charset contains an image with the character set to be used by FlapLabels. 
+
 * Plates BMPs are  cut from the master charset image, so you can add symbols or icons to your charset (see below)
 
 * Set FlapCharSet properties
@@ -46,7 +46,7 @@ But you can set it to "Go Direct" (cheat) changing to target state in a single t
  
 ![Letters and numbers charset](/Images/LettersNumbersCharset.png).
 
-Set charset layout.
+Set charset BMP grid size.
   * RowCount = 5              
   * ColCount = 8
 
@@ -56,14 +56,13 @@ Set frame size in pixels.
   
 Number of frames
   * FrameCount = 40
-
  
 * Add a TFlapLabel component to the Form (ex: FlapLabel1) 
 * Set FlapLabel1.CharSet property to FlapCharSet1
 * Set FlapLabel1.CountFlaps number of digits in the label. This is the maximun lenght of the display text. 
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
-The label should animate with ransitions from current state to target 'TEST' text.
+The label should animate with transitions from current state and until target 'TEST' is reached
 
 # Sample charsets
 

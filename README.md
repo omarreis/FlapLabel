@@ -6,6 +6,8 @@ making a satisfying flap-flap noise ).
 
 ![screenshot](/painelSolari.png)
 
+*Solari*-Udine Airport display panel.
+
 
 FlapLabel was originaly developed in 2002 for actual 
 flight information screens for São Paulo Airport (Congonhas). 

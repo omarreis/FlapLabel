@@ -26,16 +26,17 @@ on Windows, iOS and Android w/ D10.4.1
 * Compile and install FlapLabelPkg.dpk (design time package) 
 * Components *TFlapCharSet*, *TFlapChar* and *TFlapLabel* will be installed 
 
-## Usage
+## Component Usage
 
 To use FlapLabels you need at least two components on your form: TFlapCharset and TFlapLabel.
 
 *TFlapCharset* contains the art to be used in FlapLabel plates. 
+
 Depending on the application, you may use more than one charset: one with letters and one with just numbers.
 Remember that all characters cycle until the desired is reached, so using long charsets is not recommended. 
 In mechanical displays, the charset is a roll of plates connected by loops and an axis.
 
-The charset BMP can be in any grid disposition ( columns and lines ). Plates must have equal size.
+The charset BMP can be in any grid disposition ( columns and lines ). Plates must have equal sizes.
 
 Each *TFlapLabel* uses one charset (roll). But a charset can be used by multiple FlapLabels. 
 
@@ -64,13 +65,15 @@ Set frame size in pixels.
   
 Number of frames
   * FrameCount = 40
+  
  
 * Add a TFlapLabel component to the Form (ex: FlapLabel1) 
 * Set FlapLabel1.CharSet property to FlapCharSet1
 * Set FlapLabel1.CountFlaps number of digits in the label. This is the maximun lenght of the display text. 
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
-The label should animate with transitions from current state and until target 'TEST' is reached
+The flaplabel should animate with transitions from current state and until target 'TEST' is reached.
+Note that the component dows not produce any sound ( as the name might imply )
 
 # Sample charsets
 
@@ -86,7 +89,31 @@ Note that you can only use characters that are in your charset.
 Text is truncated if size is larger then CountFlaps ( the fixed numbers of characters in the label)
 
 ## Example
+
 Compile and run TestFlapLabel.dpr ( see screen shot )
+
+## Using TFlapLabels with styles
+
+After installing FlapLabel package, you can use the components in styles.
+For example, say you want to code a TListBox with customized TListBoxItem.
+Each Item will have controls showing item details. See video sample.
+
+The item can be edited with the Delphi Style Editor.
+It can include any controls. ex: TLabels, TImages, TFlapLabels,
+disposed in a custom design.
+
+To create the listbox item at run time and populate it:
+
+      Item := TListBoxItem.Create(nil);           // create styled TListBoxItem
+      Item.Parent := StockListbox;                // parent to our TListBox
+      Item.StyleLookup := 'MyStockItemStyle';     // same style name same as created in the style designer
+      
+      Item.StylesData['Cod']   := myDBItem.Cod;   // use StylesData to set values
+      Item.StylesData['Name']  := myDBItem.Name; 
+      Item.StylesData['FlapPrice.Caption']  := myDBItem.PriceStr;   // set flap label on the style. This will start the animation 
+      
+      Item.StylesData['btnEditItem.OnClick']     := TValue.From<TNotifyEvent>(DobtnEditClick);          // hook button click
+      Item.StylesData['btnLineEdDelete.OnClick'] := TValue.From<TNotifyEvent>(DobtnLineEdDeleteClick);  // hook delete btn click
 
 ## tiktok videos
 
@@ -99,8 +126,6 @@ Compile and run TestFlapLabel.dpr ( see screen shot )
 The photo below ( from 2005 ) shows an array of 9 plasma displays (42") with flight information.
 
 ![São Paulo airport display](painelIndoor.jpeg)
-
-
 
 Have fun..
 

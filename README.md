@@ -96,7 +96,9 @@ Compile and run TestFlapLabel.dpr ( see screen shot )
 
 After installing FlapLabel package, you can use the components in styles.
 For example, say you want to code a TListBox with customized TListBoxItem.
-Each Item will have controls showing item details. See video sample.
+Each Item will have controls showing item details. 
+
+( See video with stock market sample )
 
 The item can be edited with the Delphi Style Editor.
 It can include any controls. ex: TLabels, TImages, TFlapLabels,
@@ -110,7 +112,7 @@ To create the listbox item at run time and populate it:
       
       Item.StylesData['labCod.Text']     := myStockItem.Cod;           // use StylesData to set control properties
       Item.StylesData['labName.Text']    := myStockItem.Name; 
-      Item.StylesData['FlapPrice.Caption']  := myStockItem.PriceStr;   // set flap label on the style. This will start the animation 
+      Item.StylesData['FlapPrice.Caption']  := myStockItem.PriceStr;   // set flap label text. This will start the flaplabel animation 
       
       Item.StylesData['btnEditItem.OnClick']     := TValue.From<TNotifyEvent>(DobtnEditClick);          // hook button click
       Item.StylesData['btnLineEdDelete.OnClick'] := TValue.From<TNotifyEvent>(DobtnLineEdDeleteClick);  // hook delete btn click

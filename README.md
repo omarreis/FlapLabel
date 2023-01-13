@@ -96,12 +96,12 @@ Compile and run TestFlapLabel.dpr ( see screen shot )
 
 After installing FlapLabel package, you can use the components in styles.
 For example, say you want to code a TListBox with customized TListBoxItem.
-Each Item will have controls showing item details. 
+Each Item will have controls showing object details. 
 
-( See video with a stock market sample below )
+( See video with stock market app sample below )
 
-The item can be edited with the Delphi Style Editor. Use TLayout as basis for the ListboxItem.
-You can include any controls. ex: TLabels, TImages, TFlapLabels. Set control properties.
+The item can be designed with the Delphi IDE Style Editor. Use TLayout as basis for the ListboxItem.
+Set style name. You can include any controls. ex: TLabels, TImages, TFlapLabels. Set control properties.
 Make sure you set StyleName property for each control you want to use at run time.
 Save the style.
 

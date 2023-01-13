@@ -105,19 +105,18 @@ You can include any controls. ex: TLabels, TImages, TFlapLabels. Set control pro
 Make sure you set StyleName property for each control you want to use at run time.
 Save the style.
 
-To create the listbox item at run time and populate it:
+To create the TListboxItem at run time to populate the listbox:
 
-      Item := TListBoxItem.Create(nil);           // create styled TListBoxItem
-      Item.Parent := StockListbox;                // parent to our TListBox
-      Item.StyleLookup := 'MyStockItemStyle';     // set style name. Same as created in the style designer
+    Item := TListBoxItem.Create(nil);           // create styled TListBoxItem
+    Item.Parent := StockListbox;                // parent to our TListBox
+    Item.StyleLookup := 'MyStockItemStyle';     // set style name. Same as created in the style designer
+    Item.StylesData['btnEditItem.OnClick']     := TValue.From<TNotifyEvent>(DobtnEditClick);          // hook button click
+    Item.StylesData['btnLineEdDelete.OnClick'] := TValue.From<TNotifyEvent>(DobtnLineEdDeleteClick);  // hook delete btn click
       
-      Item.StylesData['labCod.Text']     := myStockItem.Cod;           // use StylesData to set control properties
-      Item.StylesData['labName.Text']    := myStockItem.Name; 
-      Item.StylesData['FlapPrice.Caption']  := myStockItem.PriceStr;   // set flap label text. This will start the flaplabel animation 
-      
-      Item.StylesData['btnEditItem.OnClick']     := TValue.From<TNotifyEvent>(DobtnEditClick);          // hook button click
-      Item.StylesData['btnLineEdDelete.OnClick'] := TValue.From<TNotifyEvent>(DobtnLineEdDeleteClick);  // hook delete btn click
-
+    Item.StylesData['labCod.Text']        := myStockItem.Cod;      // use StylesData to set control properties
+    Item.StylesData['labName.Text']       := myStockItem.Name; 
+    Item.StylesData['flapPrice.Caption']  := myStockItem.PriceStr; // set flap label text. This will start the flaplabel animation 
+     
 ## videos
 
 * demo screen: https://www.tiktok.com/@omar_reis/video/6829300494842793222

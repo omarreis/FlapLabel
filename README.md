@@ -106,11 +106,11 @@ To create the listbox item at run time and populate it:
 
       Item := TListBoxItem.Create(nil);           // create styled TListBoxItem
       Item.Parent := StockListbox;                // parent to our TListBox
-      Item.StyleLookup := 'MyStockItemStyle';     // same style name same as created in the style designer
+      Item.StyleLookup := 'MyStockItemStyle';     // set style name. Same as created in the style designer
       
-      Item.StylesData['Cod']   := myDBItem.Cod;   // use StylesData to set values
-      Item.StylesData['Name']  := myDBItem.Name; 
-      Item.StylesData['FlapPrice.Caption']  := myDBItem.PriceStr;   // set flap label on the style. This will start the animation 
+      Item.StylesData['labCod.Text']     := myStockItem.Cod;           // use StylesData to set control properties
+      Item.StylesData['labName.Text']    := myStockItem.Name; 
+      Item.StylesData['FlapPrice.Caption']  := myStockItem.PriceStr;   // set flap label on the style. This will start the animation 
       
       Item.StylesData['btnEditItem.OnClick']     := TValue.From<TNotifyEvent>(DobtnEditClick);          // hook button click
       Item.StylesData['btnLineEdDelete.OnClick'] := TValue.From<TNotifyEvent>(DobtnLineEdDeleteClick);  // hook delete btn click

@@ -98,11 +98,12 @@ After installing FlapLabel package, you can use the components in styles.
 For example, say you want to code a TListBox with customized TListBoxItem.
 Each Item will have controls showing item details. 
 
-( See video with stock market sample )
+( See video with a stock market sample below )
 
-The item can be edited with the Delphi Style Editor.
-It can include any controls. ex: TLabels, TImages, TFlapLabels,
-disposed in a custom design.
+The item can be edited with the Delphi Style Editor. Use TLayout as basis for the ListboxItem.
+You can include any controls. ex: TLabels, TImages, TFlapLabels. Set control properties.
+Make sure you set StyleName property for each control you want to use at run time.
+Save the style.
 
 To create the listbox item at run time and populate it:
 
@@ -117,7 +118,7 @@ To create the listbox item at run time and populate it:
       Item.StylesData['btnEditItem.OnClick']     := TValue.From<TNotifyEvent>(DobtnEditClick);          // hook button click
       Item.StylesData['btnLineEdDelete.OnClick'] := TValue.From<TNotifyEvent>(DobtnLineEdDeleteClick);  // hook delete btn click
 
-## tiktok videos
+## videos
 
 * demo screen: https://www.tiktok.com/@omar_reis/video/6829300494842793222
 * worst day on the Stock Market (app NassauSt): https://www.tiktok.com/@omar_reis/video/6802287150411877638

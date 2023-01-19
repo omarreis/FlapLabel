@@ -73,7 +73,7 @@ Number of frames
 * Set FlapLabel1.Caption to 'TEST'  (case sensitive)
 
 The flaplabel should animate with transitions from current state and until target 'TEST' is reached.
-Note that the component dows not produce any sound ( as the name might imply )
+Note that the component does not produce any sound, as the name might imply.
 
 # Sample charsets
 
